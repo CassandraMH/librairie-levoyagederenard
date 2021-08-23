@@ -1,0 +1,309 @@
+/* Couleur de Fond */
+
+body{
+	background-color: #faf9e5;
+} 
+
+/* Header */
+header{
+	background-image: url('image/bouge-pas/banniere.png');
+	width: 99vw;
+	height: 85vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color:#8F736E; 
+	position: relative;	
+	font-family:'Indie Flower', cursive;
+	color: #FFFFFF;
+}
+
+header h1{
+	font-size: 50px;
+}
+
+h1{
+	position: absolute;
+	bottom: 7.5%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+/* Menu Mobile */
+
+.collapse{
+  transition: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color:#86AAC4 ;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #86AAC4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+	margin: 30px 0;
+}
+
+nav .btn{
+	background-color: #86AAC4;
+	font-family:'Lato', sans-serif;
+	color: white;
+}
+
+nav ul li {
+    width: 100%;
+	padding: 5px 50px;
+}
+
+#container{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100px;
+}
+
+/* Titre */
+.titre h2{
+	text-align: center;
+	font-family:'Indie Flower', cursive;
+	font-size: 60px;
+	padding-top: 50px;
+}
+
+.container.cercle{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.cercle1 { 
+	height: 20px; 
+	width: 20px; 
+	background-color: #F0883E;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 50%; 
+	background-repeat: repeat-x;
+} 
+
+.cercle2{
+	height: 20px; 
+	width: 20px; 
+	background-color:#86AAC4 ;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 50%; 
+	background-repeat: repeat-x;
+}
+
+.cercle3{
+	height: 20px; 
+	width: 20px; 
+	background-color:#8F736E ;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 50%; 
+	background-repeat: repeat-x;
+}
+
+/* Mentions Légales */
+
+.m-l{
+	margin-right: 300px;
+	margin-left: 300px;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-family:'Lato', sans-serif;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.m-l p {
+	font-size: 15px;
+}
+
+/*Footer*/
+
+ /*Footer*/
+
+footer{
+ 	background-image: url('image/bouge-pas/image-footer.jpg');
+ 	background-size: cover;
+ 	position: relative;
+ 	padding: 20px 30px 10px 20px;
+}
+
+/* Liens Footer */
+ footer a{
+ 	font-family:'Lato', sans-serif;
+ 	color: black;
+ 	font-size: 23px;
+}
+
+/* Coordonnées */
+ footer p{
+ 	font-family:'Lato', sans-serif;
+ 	font-size: 20px;
+}
+
+.copy p{
+	padding-top: 30px;
+	margin-left: 80px;
+	font-size: 15px;
+}
+
+/* Réseaux Sociaux */
+footer .icone-footer{
+	text-align: right;
+}
+
+footer .icone-footer p{
+	font-family:'Lato', sans-serif;
+	font-size: 22px;
+}
+
+/* Renard footer */
+.renard{
+ 	position: absolute;
+ 	top: -170px;
+ 	right: 1%;
+}
+
+/* Autre */
+footer img{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+footer .image{
+	margin-top: 80px;
+}
+
+/* écran de 0 à 320px */
+@media screen and (max-width: 320px) {
+	html {
+		width: 100%;
+	}
+
+}
+
+/* 321 à 768px */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	html {
+		width: 100%;
+	}
+	
+	/* Header */
+	header h1{
+		font-size: 20px;
+	}
+
+	header{
+		height: 50vh;
+		width: 100%;
+	}
+
+	nav{
+		display: none;
+	}
+
+	/* Titre */
+	.titre h2{
+		font-size: 35px;
+	}
+
+	.m-l{
+		margin-right: 15px;
+		margin-left: 15px;
+		padding-bottom: 50px;
+		text-align: left;
+
+	}
+
+	.m-l p{
+		font-size: 15px;
+	}
+
+	/* Footer */
+	footer{
+		margin-top: 170px;
+		flex-direction: column-reverse;
+	}
+
+	.renard{
+		right: 23%;
+	}
+
+	footer .lien-footer li{
+ 	text-align: center;
+ 	}
+
+ 	footer .image{
+ 		text-align: center;
+ 		margin-bottom: 60px;
+
+ 	}
+ 	footer .image img{
+ 		height: 25px;
+ 		width: 25px;
+ 	}
+
+ 	footer .image p{
+ 		font-size: 16px;
+ 	}
+
+	.copy{
+		display: none;
+	}
+
+}
+
+@media (min-width: 769px){
+
+	/* Menu Mobile */
+	.dropdown{
+		display: none!important;
+	}
+}
